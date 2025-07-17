@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "@/components/atoms/Button";
-import Badge from "@/components/atoms/Badge";
-import ApperIcon from "@/components/ApperIcon";
 import { motion } from "framer-motion";
+import ApperIcon from "@/components/ApperIcon";
+import Badge from "@/components/atoms/Badge";
+import Button from "@/components/atoms/Button";
 
 const VehicleCard = ({ vehicle, onSave, onCompare, isSaved = false, isCompared = false }) => {
   const formatPrice = (price) => {
@@ -18,13 +18,14 @@ const VehicleCard = ({ vehicle, onSave, onCompare, isSaved = false, isCompared =
     return new Intl.NumberFormat('en-US').format(mileage);
   };
 
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3 }}
-      className="card overflow-hidden group"
-    >
+return (
+    <Link to={`/vehicle/${vehicle.Id}`} className="block">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3 }}
+        className="card overflow-hidden group cursor-pointer"
+      >
       {/* Image */}
       <div className="relative aspect-[4/3] overflow-hidden">
         <img
@@ -35,9 +36,13 @@ const VehicleCard = ({ vehicle, onSave, onCompare, isSaved = false, isCompared =
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
         
         {/* Action Buttons */}
-        <div className="absolute top-3 right-3 flex gap-2">
+<div className="absolute top-3 right-3 flex gap-2">
           <button
-            onClick={() => onSave(vehicle.Id)}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              onSave(vehicle.Id);
+            }}
             className={`p-2 rounded-full backdrop-blur-sm transition-all duration-200 ${
               isSaved 
                 ? "bg-accent-500 text-white" 
@@ -46,8 +51,12 @@ const VehicleCard = ({ vehicle, onSave, onCompare, isSaved = false, isCompared =
           >
             <ApperIcon name="Heart" className="w-4 h-4" fill={isSaved ? "currentColor" : "none"} />
           </button>
-          <button
-            onClick={() => onCompare(vehicle.Id)}
+<button
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              onCompare(vehicle.Id);
+            }}
             className={`p-2 rounded-full backdrop-blur-sm transition-all duration-200 ${
               isCompared 
                 ? "bg-primary-500 text-white" 
@@ -105,19 +114,33 @@ const VehicleCard = ({ vehicle, onSave, onCompare, isSaved = false, isCompared =
           )}
         </div>
 
-        {/* Actions */}
-        <div className="flex gap-2">
-          <Link to={`/vehicle/${vehicle.Id}`} className="flex-1">
-            <Button className="w-full" size="sm">
-              View Details
-            </Button>
-          </Link>
-          <Button variant="outline" size="sm" className="px-3">
+<div className="flex gap-2">
+          <Button 
+            className="w-full" 
+            size="sm"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+            }}
+          >
+            View Details
+          </Button>
+          <Button 
+            variant="outline" 
+            size="sm" 
+            className="px-3"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              window.open(vehicle.listingUrl, '_blank');
+            }}
+          >
             <ApperIcon name="ExternalLink" className="w-4 h-4" />
           </Button>
         </div>
       </div>
-    </motion.div>
+</motion.div>
+    </Link>
   );
 };
 

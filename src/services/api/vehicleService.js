@@ -75,6 +75,12 @@ class VehicleService {
       filteredVehicles = filteredVehicles.filter(v => 
         filters.transmission.includes(v.transmission)
       );
+}
+
+    if (filters.condition && filters.condition.length > 0) {
+      filteredVehicles = filteredVehicles.filter(v => 
+        filters.condition.includes(v.condition)
+      );
     }
 
     return filteredVehicles;

@@ -192,6 +192,12 @@ const SearchFilters = ({ filters, onFiltersChange, onSaveSearch }) => {
             title="Transmission"
             options={["Automatic", "Manual", "CVT"]}
             filterKey="transmission"
+/>
+
+          <CheckboxGroup
+            title="Condition"
+            options={["New", "Used"]}
+            filterKey="condition"
           />
         </FilterSection>
       </div>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import vehicleService from "@/services/api/vehicleService";
 
 const useVehicles = (filters = {}) => {
@@ -23,9 +23,11 @@ const useVehicles = (filters = {}) => {
     }
   };
 
+const filterKey = useMemo(() => JSON.stringify(filters), [filters]);
+
   useEffect(() => {
     loadVehicles();
-  }, [JSON.stringify(filters)]);
+  }, [filterKey]);
 
   return {
     vehicles,
