@@ -1,0 +1,178 @@
+[
+  {
+    "Id": 1,
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2023,
+    "price": 32500,
+    "mileage": 15000,
+    "bodyType": "Sedan",
+    "transmission": "Automatic",
+    "fuelType": "Gasoline",
+    "color": "Silver",
+    "vin": "1HGBH41JXMN109186",
+    "images": [
+      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&h=500&fit=crop"
+    ],
+    "features": ["Backup Camera", "Bluetooth", "Cruise Control", "Power Windows"],
+    "dealershipId": "1",
+    "listingUrl": "https://example-dealer.com/camry-2023",
+    "location": { "lat": 40.7128, "lng": -74.0060 },
+    "dateAdded": "2024-01-15"
+  },
+  {
+    "Id": 2,
+    "make": "Honda",
+    "model": "Accord",
+    "year": 2022,
+    "price": 28900,
+    "mileage": 22000,
+    "bodyType": "Sedan",
+    "transmission": "Automatic",
+    "fuelType": "Gasoline",
+    "color": "White",
+    "vin": "1HGBH41JXMN109187",
+    "images": [
+      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?w=800&h=500&fit=crop"
+    ],
+    "features": ["Apple CarPlay", "Lane Assist", "Heated Seats", "Sunroof"],
+    "dealershipId": "2",
+    "listingUrl": "https://example-dealer.com/accord-2022",
+    "location": { "lat": 40.7589, "lng": -73.9851 },
+    "dateAdded": "2024-01-12"
+  },
+  {
+    "Id": 3,
+    "make": "BMW",
+    "model": "3 Series",
+    "year": 2023,
+    "price": 45000,
+    "mileage": 8500,
+    "bodyType": "Sedan",
+    "transmission": "Automatic",
+    "fuelType": "Gasoline",
+    "color": "Black",
+    "vin": "1HGBH41JXMN109188",
+    "images": [
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1549924231-f129b911e442?w=800&h=500&fit=crop"
+    ],
+    "features": ["Premium Sound", "Navigation", "Leather Seats", "Sport Package"],
+    "dealershipId": "3",
+    "listingUrl": "https://example-dealer.com/bmw-3series-2023",
+    "location": { "lat": 40.6892, "lng": -74.0445 },
+    "dateAdded": "2024-01-10"
+  },
+  {
+    "Id": 4,
+    "make": "Ford",
+    "model": "F-150",
+    "year": 2023,
+    "price": 52000,
+    "mileage": 12000,
+    "bodyType": "Truck",
+    "transmission": "Automatic",
+    "fuelType": "Gasoline",
+    "color": "Blue",
+    "vin": "1HGBH41JXMN109189",
+    "images": [
+      "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&h=500&fit=crop"
+    ],
+    "features": ["4WD", "Towing Package", "Bed Liner", "Crew Cab"],
+    "dealershipId": "1",
+    "listingUrl": "https://example-dealer.com/f150-2023",
+    "location": { "lat": 40.7128, "lng": -74.0060 },
+    "dateAdded": "2024-01-08"
+  },
+  {
+    "Id": 5,
+    "make": "Tesla",
+    "model": "Model 3",
+    "year": 2023,
+    "price": 48000,
+    "mileage": 5000,
+    "bodyType": "Sedan",
+    "transmission": "Automatic",
+    "fuelType": "Electric",
+    "color": "Red",
+    "vin": "1HGBH41JXMN109190",
+    "images": [
+      "https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=500&fit=crop"
+    ],
+    "features": ["Autopilot", "Premium Interior", "Glass Roof", "Supercharging"],
+    "dealershipId": "4",
+    "listingUrl": "https://example-dealer.com/model3-2023",
+    "location": { "lat": 40.7282, "lng": -73.7949 },
+    "dateAdded": "2024-01-05"
+  },
+  {
+    "Id": 6,
+    "make": "Audi",
+    "model": "Q7",
+    "year": 2022,
+    "price": 65000,
+    "mileage": 18000,
+    "bodyType": "SUV",
+    "transmission": "Automatic",
+    "fuelType": "Gasoline",
+    "color": "Gray",
+    "vin": "1HGBH41JXMN109191",
+    "images": [
+      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=500&fit=crop"
+    ],
+    "features": ["Quattro AWD", "Virtual Cockpit", "Premium Plus", "Third Row"],
+    "dealershipId": "5",
+    "listingUrl": "https://example-dealer.com/q7-2022",
+    "location": { "lat": 40.6782, "lng": -73.9442 },
+    "dateAdded": "2024-01-03"
+  },
+  {
+    "Id": 7,
+    "make": "Chevrolet",
+    "model": "Corvette",
+    "year": 2023,
+    "price": 72000,
+    "mileage": 3500,
+    "bodyType": "Coupe",
+    "transmission": "Automatic",
+    "fuelType": "Gasoline",
+    "color": "Yellow",
+    "vin": "1HGBH41JXMN109192",
+    "images": [
+      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=500&fit=crop"
+    ],
+    "features": ["Performance Package", "Carbon Fiber", "Sport Suspension", "Launch Control"],
+    "dealershipId": "6",
+    "listingUrl": "https://example-dealer.com/corvette-2023",
+    "location": { "lat": 40.7505, "lng": -73.9934 },
+    "dateAdded": "2024-01-01"
+  },
+  {
+    "Id": 8,
+    "make": "Jeep",
+    "model": "Wrangler",
+    "year": 2022,
+    "price": 38000,
+    "mileage": 25000,
+    "bodyType": "SUV",
+    "transmission": "Manual",
+    "fuelType": "Gasoline",
+    "color": "Green",
+    "vin": "1HGBH41JXMN109193",
+    "images": [
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop"
+    ],
+    "features": ["4x4", "Removable Doors", "Rock Rails", "Skid Plates"],
+    "dealershipId": "2",
+    "listingUrl": "https://example-dealer.com/wrangler-2022",
+    "location": { "lat": 40.7589, "lng": -73.9851 },
+    "dateAdded": "2023-12-28"
+  }
+]

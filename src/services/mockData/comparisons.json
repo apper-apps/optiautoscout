@@ -1,0 +1,14 @@
+[
+  {
+    "Id": 1,
+    "name": "Sedan Comparison",
+    "vehicleIds": ["1", "2", "3"],
+    "createdAt": "2024-01-15"
+  },
+  {
+    "Id": 2,
+    "name": "Electric vs Gas",
+    "vehicleIds": ["5", "1"],
+    "createdAt": "2024-01-12"
+  }
+]

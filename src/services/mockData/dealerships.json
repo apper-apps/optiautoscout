@@ -1,0 +1,56 @@
+[
+  {
+    "Id": 1,
+    "name": "Metro Toyota",
+    "address": "123 Main St, New York, NY 10001",
+    "phone": "(555) 123-4567",
+    "website": "https://metrotoyota.com",
+    "location": { "lat": 40.7128, "lng": -74.0060 },
+    "vehicleCount": 45
+  },
+  {
+    "Id": 2,
+    "name": "Central Honda",
+    "address": "456 Broadway, New York, NY 10013",
+    "phone": "(555) 234-5678",
+    "website": "https://centralhonda.com",
+    "location": { "lat": 40.7589, "lng": -73.9851 },
+    "vehicleCount": 38
+  },
+  {
+    "Id": 3,
+    "name": "Premium BMW",
+    "address": "789 Fifth Ave, New York, NY 10022",
+    "phone": "(555) 345-6789",
+    "website": "https://premiumbmw.com",
+    "location": { "lat": 40.6892, "lng": -74.0445 },
+    "vehicleCount": 52
+  },
+  {
+    "Id": 4,
+    "name": "Electric Auto",
+    "address": "321 Electric Ave, Queens, NY 11375",
+    "phone": "(555) 456-7890",
+    "website": "https://electricauto.com",
+    "location": { "lat": 40.7282, "lng": -73.7949 },
+    "vehicleCount": 29
+  },
+  {
+    "Id": 5,
+    "name": "Luxury Motors",
+    "address": "654 Park Ave, Brooklyn, NY 11215",
+    "phone": "(555) 567-8901",
+    "website": "https://luxurymotors.com",
+    "location": { "lat": 40.6782, "lng": -73.9442 },
+    "vehicleCount": 67
+  },
+  {
+    "Id": 6,
+    "name": "Performance Plus",
+    "address": "987 Speed Way, Manhattan, NY 10019",
+    "phone": "(555) 678-9012",
+    "website": "https://performanceplus.com",
+    "location": { "lat": 40.7505, "lng": -73.9934 },
+    "vehicleCount": 34
+  }
+]
