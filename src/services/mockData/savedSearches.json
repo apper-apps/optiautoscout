@@ -3,7 +3,7 @@
     "Id": 1,
     "name": "Luxury Sedans Under 50k",
     "filters": {
-      "bodyType": "Sedan",
+      "bodyType": ["Sedan"],
       "maxPrice": 50000,
       "make": ["BMW", "Audi", "Mercedes"]
     },
@@ -15,7 +15,7 @@
     "Id": 2,
     "name": "Electric Vehicles",
     "filters": {
-      "fuelType": "Electric",
+      "fuelType": ["Electric"],
       "maxMileage": 20000
     },
     "createdAt": "2024-01-08",
@@ -26,8 +26,9 @@
     "Id": 3,
     "name": "Trucks for Work",
     "filters": {
-      "bodyType": "Truck",
-      "year": [2022, 2023],
+      "bodyType": ["Truck"],
+      "minYear": 2022,
+      "maxYear": 2023,
       "maxPrice": 60000
     },
     "createdAt": "2024-01-05",

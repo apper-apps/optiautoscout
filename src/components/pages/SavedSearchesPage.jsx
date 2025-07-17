@@ -66,31 +66,51 @@ const SavedSearchesPage = () => {
     }
   };
 
+// Helper function to normalize filter values to arrays
+  const normalizeToArray = (value) => {
+    if (!value) return [];
+    return Array.isArray(value) ? value : [value];
+  };
+
   const formatFilters = (filters) => {
     const filterStrings = [];
     
-    if (filters.make && filters.make.length > 0) {
-      filterStrings.push(`Make: ${filters.make.join(", ")}`);
+    // Safely handle make filter
+    const makeArray = normalizeToArray(filters?.make);
+    if (makeArray.length > 0) {
+      filterStrings.push(`Make: ${makeArray.join(", ")}`);
     }
-    if (filters.model) {
+    
+    // Handle model filter (single value)
+    if (filters?.model) {
       filterStrings.push(`Model: ${filters.model}`);
     }
-    if (filters.minYear || filters.maxYear) {
+    
+    // Handle year range
+    if (filters?.minYear || filters?.maxYear) {
       const yearRange = [filters.minYear, filters.maxYear].filter(Boolean).join("-");
       filterStrings.push(`Year: ${yearRange}`);
     }
-    if (filters.minPrice || filters.maxPrice) {
+    
+    // Handle price range
+    if (filters?.minPrice || filters?.maxPrice) {
       const priceRange = [
         filters.minPrice ? `$${filters.minPrice.toLocaleString()}` : "",
         filters.maxPrice ? `$${filters.maxPrice.toLocaleString()}` : ""
       ].filter(Boolean).join("-");
       filterStrings.push(`Price: ${priceRange}`);
     }
-    if (filters.bodyType && filters.bodyType.length > 0) {
-      filterStrings.push(`Type: ${filters.bodyType.join(", ")}`);
+    
+    // Safely handle bodyType filter
+    const bodyTypeArray = normalizeToArray(filters?.bodyType);
+    if (bodyTypeArray.length > 0) {
+      filterStrings.push(`Type: ${bodyTypeArray.join(", ")}`);
     }
-    if (filters.fuelType && filters.fuelType.length > 0) {
-      filterStrings.push(`Fuel: ${filters.fuelType.join(", ")}`);
+    
+    // Safely handle fuelType filter
+    const fuelTypeArray = normalizeToArray(filters?.fuelType);
+    if (fuelTypeArray.length > 0) {
+      filterStrings.push(`Fuel: ${fuelTypeArray.join(", ")}`);
     }
 
     return filterStrings.slice(0, 3);
